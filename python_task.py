@@ -14,4 +14,11 @@ def is_palindrome(string):
 			end -= 1
 	return True
 
-print(is_palindrome("radr"))
+#print(is_palindrome("radr"))
+
+def map_length(input_words):
+	words_list = input_words.split()
+	return [len(word) for word in words_list]
+
+input_words = input("Please enter the words separated by space:\n")
+print(map_length(input_words))
